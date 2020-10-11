@@ -16,7 +16,7 @@ import api from '../../services/api';
 
 interface ResetPasswordFormData {
   password: string;
-  passwordConfirmation: string;
+  password_confirmation: string;
 }
 
 const ResetPassword: React.FC = () => {
@@ -36,7 +36,7 @@ const ResetPassword: React.FC = () => {
 
         const schema = Yup.object().shape({
           password: Yup.string().min(6, 'No mínimo 6 dígitos'),
-          passwordConfirmation: Yup.string().oneOf(
+          password_confirmation: Yup.string().oneOf(
             [Yup.ref('password')],
             'Confirmação incorreta',
           ),
@@ -46,7 +46,7 @@ const ResetPassword: React.FC = () => {
           abortEarly: false,
         });
 
-        const { password, passwordConfirmation } = data;
+        const { password, password_confirmation } = data;
         const token = location.search.replace('?token=', '');
 
         if (!token) {
@@ -55,7 +55,7 @@ const ResetPassword: React.FC = () => {
 
         await api.post('/password/reset', {
           password,
-          password_confirmation: passwordConfirmation,
+          password_confirmation: password_confirmation,
           token,
         });
 
@@ -99,7 +99,7 @@ const ResetPassword: React.FC = () => {
             />
             <Input
               type="password"
-              name="passwordConfirmation"
+              name="password_confirmation"
               icon={FiLock}
               placeholder="Confirmação de senha"
             />
