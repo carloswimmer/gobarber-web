@@ -35,6 +35,7 @@
     "react/prop-types": "off",
     "no-unused-expressions": "off",
     "import/prefer-default-export": "off",
+    "import/no-duplicates": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
