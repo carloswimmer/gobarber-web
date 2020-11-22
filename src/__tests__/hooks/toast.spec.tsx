@@ -23,8 +23,6 @@ describe('Toast hook', () => {
       wrapper: ToastProvider,
     });
 
-    // const { addToast, removeToast, messages } = result.current;
-
     act(() => {
       result.current.addToast({
         type: 'success',
