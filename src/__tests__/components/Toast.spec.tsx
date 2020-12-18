@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, fireEvent, render, wait } from '@testing-library/react';
+import { act, fireEvent, render } from '@testing-library/react';
 import ToastContainer from '../../components/ToastContainer';
 
 import { ToastMessage } from '../../hooks/toast';
