@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import DayPicker, { DayModifiers } from 'react-day-picker';
 import { isToday, format, isWeekend, parseISO, isAfter } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
+import { Link } from 'react-router-dom';
 import 'react-day-picker/lib/style.css';
 
 import { FiPower, FiClock } from 'react-icons/fi';
@@ -21,7 +22,6 @@ import {
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
-import { Link } from 'react-router-dom';
 
 interface MonthAvailabilityItem {
   day: number;
@@ -128,7 +128,12 @@ const Dashboard: React.FC = () => {
   }, [appointments]);
 
   const nextAppointment = useMemo(() => {
-    return appointments.find((appointment) =>
+    const sortedAppointments = appointments.sort((a, b) => {
+      if (a.hourFormatted > b.hourFormatted) return 1;
+      if (a.hourFormatted < b.hourFormatted) return -1;
+      return 0;
+    });
+    return sortedAppointments.find((appointment) =>
       isAfter(parseISO(appointment.date), new Date()),
     );
   }, [appointments]);
