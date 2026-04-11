@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/TypeScript-3.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/styled--components-5-DB7093?style=flat-square&logo=styled-components&logoColor=white" alt="styled-components" />
   <img src="https://img.shields.io/badge/React_Router-5-CA4245?style=flat-square&logo=react-router&logoColor=white" alt="React Router" />
-  <img src="https://img.shields.io/badge/Create_React_App-3.4-09D3AC?style=flat-square&logo=createreactapp&logoColor=white" alt="Create React App" />
+  <img src="https://img.shields.io/badge/CRA-3.4-09D3AC?style=flat-square&logo=react&logoColor=white" alt="Create React App" />
   <img src="https://img.shields.io/badge/License-MIT-326CE5?style=flat-square" alt="License MIT" />
 </p>
 
