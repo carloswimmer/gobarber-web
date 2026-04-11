@@ -1,6 +1,21 @@
 # GoBarber Web
 
-Front-end web app for **GoBarber** — a barbershop scheduling platform where providers manage their agenda and appointments. This project pairs with a REST API (expected at `http://localhost:3333` by default).
+<p align="center">
+  <strong>Front-end for GoBarber — barbershop scheduling: providers manage agenda, appointments, and profile.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-16-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/styled--components-5-DB7093?style=flat-square&logo=styled-components&logoColor=white" alt="styled-components" />
+  <img src="https://img.shields.io/badge/React_Router-5-CA4245?style=flat-square&logo=react-router&logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/Create_React_App-3.4-09D3AC?style=flat-square&logo=createreactapp&logoColor=white" alt="Create React App" />
+  <img src="https://img.shields.io/badge/License-MIT-326CE5?style=flat-square" alt="License MIT" />
+</p>
+
+<p align="center">
+  Consumes the GoBarber REST API (default <code>http://localhost:3333</code>).
+</p>
 
 ---
 
