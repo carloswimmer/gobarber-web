@@ -1,5 +1,7 @@
 # GoBarber Web
 
+![GoBarber dashboard hero](./docs/image/screenshot.jpg)
+
 <p align="center">
   <strong>Front-end for GoBarber — barbershop scheduling: providers manage agenda, appointments, and profile.</strong>
 </p>
@@ -47,6 +49,7 @@
 ## Prerequisites
 
 - **Node.js** (LTS recommended; this project targets the CRA 3 / TypeScript 3 era — use a Node version compatible with `react-scripts@3.4.1`, e.g. 12–14 if you hit install issues on newer Node)  
+- **[Yarn](https://yarnpkg.com/)** (Classic 1.x works well with this stack)  
 - **GoBarber API** running and reachable (default base URL below)  
 
 ---
@@ -58,7 +61,7 @@
 ```bash
 git clone <your-repo-url>
 cd gobarber-web
-npm install
+yarn
 ```
 
 ### 2. API base URL
@@ -72,7 +75,7 @@ That value lives in `src/services/api.ts`. Change `baseURL` there if your backen
 ### 3. Run the app
 
 ```bash
-npm start
+yarn start
 ```
 
 Opens [http://localhost:3000](http://localhost:3000) with hot reload.
@@ -80,7 +83,7 @@ Opens [http://localhost:3000](http://localhost:3000) with hot reload.
 ### 4. Build for production
 
 ```bash
-npm run build
+yarn build
 ```
 
 Output is written to `build/`.
@@ -91,11 +94,11 @@ Output is written to `build/`.
 
 | Command | Description |
 |---------|-------------|
-| `npm start` | Dev server (port 3000) |
-| `npm run build` | Production build |
-| `npm test` | Run tests in watch mode |
-| `npm run test:coverage` | Tests once with coverage (pages, components, hooks) |
-| `npm run eject` | Eject from CRA (irreversible) |
+| `yarn start` | Dev server (port 3000) |
+| `yarn build` | Production build |
+| `yarn test` | Run tests in watch mode |
+| `yarn test:coverage` | Tests once with coverage (pages, components, hooks) |
+| `yarn eject` | Eject from CRA (irreversible) |
 
 ---
 
